@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adventurers",
+  "info": {
+    "singularName": "adventurous",
+    "pluralName": "adventurers",
+    "displayName": "Adventurous",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "email"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "adventurous"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "password": {
+      "type": "password"
+    },
+    "confirmPassword": {
+      "type": "password"
+    },
+    "activities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::activity.activity",
+      "mappedBy": "advenId"
+    }
+  }
+}
