@@ -18,7 +18,7 @@
     "surname": {
       "type": "string"
     },
-    "mail": {
+    "email": {
       "type": "email"
     },
     "user": {

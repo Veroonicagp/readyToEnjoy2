@@ -415,7 +415,7 @@ export interface ApiAdventurousAdventurous extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     surname: Attribute.String;
-    mail: Attribute.Email;
+    email: Attribute.Email;
     user: Attribute.Relation<
       'api::adventurous.adventurous',
       'oneToOne',
