@@ -383,6 +383,7 @@ export interface ApiActivityActivity extends Schema.CollectionType {
       'api::adventurous.adventurous'
     >;
     location: Attribute.String;
+    img: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
