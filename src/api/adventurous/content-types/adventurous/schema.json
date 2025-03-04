@@ -21,11 +21,11 @@
     "email": {
       "type": "email"
     },
-    "user": {
+    "userId": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
-      "mappedBy": "adventurous"
+      "inversedBy": "adventurous"
     },
     "media": {
       "type": "media",
