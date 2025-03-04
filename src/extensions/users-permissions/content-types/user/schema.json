@@ -70,7 +70,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::adventurous.adventurous",
-      "mappedBy": "userId"
+      "mappedBy": "user"
     }
   }
 }
