@@ -9,8 +9,7 @@
     "displayName": "User"
   },
   "options": {
-    "draftAndPublish": false,
-    "timestamps": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {
@@ -71,6 +70,9 @@
       "relation": "oneToOne",
       "target": "api::adventurous.adventurous",
       "mappedBy": "user"
+    },
+    "isAdmin": {
+      "type": "boolean"
     }
   }
 }
